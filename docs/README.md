@@ -1,5 +1,8 @@
 # JavaScript Workshop SSDD 2017
 
-...
 
-## Sect 2
+
+## Instructions
+
+- Clone repository
+- Install NodeJS
