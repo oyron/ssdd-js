@@ -1,26 +1,108 @@
+<!doctype html>
 <!--suppress ALL -->
 <html>
-<head>
-    <title>JavaScript workshop - SSDD 2017</title>
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/white.css">
-</head>
-<body>
-<div class="reveal">
-    <div class="slides">
-        <section data-markdown>
-            <textarea data-template>
-                ## Page title
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>JavaScript Workshop SSDD 2017</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <!-- START PAGE -->
+				<section data-markdown>
+                    <textarea data-template>
+                        ## JavaScript
 
-                A paragraph with some text and a [link](http://hakim.se).
-            </textarea>
-        </section>
-        <section>Slide 2</section>
-    </div>
-</div>
-<script src="js/reveal.js"></script>
-<script>
-    Reveal.initialize();
-</script>
-</body>
+                        SSDD 2017
+                    </textarea>
+                </section>
+
+                <!-- SAY HELLO -->
+                <section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ## About me
+
+                        </textarea>
+                    </section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ## About you
+
+                        </textarea>
+                    </section>
+                </section>
+
+                <!-- AGENDA -->
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Agenda
+
+
+                    </textarea>
+                </section>
+
+
+                <section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### The JavaScript Programming Language
+                            - High-level
+                            - Untyped
+                            - Interpreted run-time
+                            - ... first class functions, etc
+
+
+                        </textarea>
+                    </section>
+
+                    <section>
+                        Code sample
+                        <pre><code data-trim data-noescape>
+                        function myFunction(a, b) {
+                            const c = a + b;
+                            return c * 10;
+                         }
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        History
+                    </section>
+
+                    <section>
+                        Popularity
+                    </section>
+
+                    <section>
+                        Usage
+                        <ul>
+                            <li>Web browser</li>
+                            <li>Server side (node.js)</li>
+                        </ul>
+                    </section>
+
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
 </html>
