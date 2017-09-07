@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <title>SSDD 2017 JavaScript Demo App</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="js/functions.js"></script>
 </head>
+
+
 <body>
     <div class="container">
         <div class="text-center">
 
-            <H1>SSDD 2017 JavaScript Workshop</H1>
+            <H1>SSDD 2017 JavaScript Workshop</H1><br>
 
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel heading</h3>
+                <div id="panel-heading" class="panel-heading">
+                    <h3 class="panel-title">Buttons</h3>
                 </div>
-                <div class="panel-body">
-                    Panel content
+                <div id="panel-body" class="panel-body">
+                    <button id="button" onClick="toggleBackground()" class="btn btn-primary" style="margin:10px">Toggle heading background</button>
+                    <button id="size-button" onClick="toggleSize()" class="btn btn-primary" style="margin:10px">Swap</button>
                 </div>
             </div>
         </div>
     </div>
 
 </body>
+
+
+
+
 </html>
