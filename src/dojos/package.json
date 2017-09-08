@@ -1,0 +1,14 @@
+{
+  "name": "dojos",
+  "version": "1.0.0",
+  "description": "SSDD JavaScript DOJOs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Øyvind Rønne",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.8.0"
+  }
+}
