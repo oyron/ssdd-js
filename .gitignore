@@ -1,4 +1,4 @@
 ssdd-js.iml
 .idea
 src/*.log
-src/node_modules
+**/node_modules
