@@ -2,6 +2,7 @@
 
 const express = require('express');
 const app = express();
+const fizzBuzz = require('./lib/fizzbuzz');
 
 const port = 3000;
 
@@ -27,19 +28,4 @@ function completeFizzBuzz() {
         result.push(fizzBuzz(i));
     }
     return result;
-}
-
-function fizzBuzz(input) {
-
-    if (input % 3 === 0 && input % 5 === 0) {
-        return "FizzBuzz"
-    }
-    if (input % 3 === 0) {
-        return "Fizz";
-    }
-    if (input % 5 === 0) {
-        return "Buzz";
-    }
-    return input;
-
 }

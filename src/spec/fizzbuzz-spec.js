@@ -1,6 +1,6 @@
 'use strict';
 
-let fizzBuzz = require('./fizzbuzz.js');
+let fizzBuzz = require('../lib/fizzbuzz.js');
 
 describe("fizzBuzz", function() {
     it("should return 1 on input 1", function() {
