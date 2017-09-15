@@ -1,9 +1,3 @@
-#SSDD JavaScript DOJOs
-
-### How to get started
-1. Clone Git repo
-2. In directory `src`, run `npm install`
-
 ###How to create a Jasmine setup from scratch
  
 The set up requires Node.js
