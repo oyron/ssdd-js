@@ -17,5 +17,6 @@ npm config set https-proxy "http://www-proxy.statoil.no:80"
 
 
 ### How to run
+In directory `src`
 * run tests: `npm test`
 * run webapp: `npm start`

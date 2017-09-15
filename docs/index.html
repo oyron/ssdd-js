@@ -144,11 +144,17 @@
                     <section data-markdown>
                         <textarea data-template>
                             ### Characteristics
+                            - Lightweight
                             - Dynamic (interpreted run-time)
-                            - Untyped
+                            - Weakly typed, i.e. dynamic type checking
                             - Multi paradigm (functional, object oriented, etc)
                             - != Java
                         </textarea>
+                    </section>
+
+                    <section>
+                        <H3>Client vs server side</H3>
+
                     </section>
 
                     <section>
@@ -170,7 +176,9 @@
                             </code>
                         </pre>
                     </section>
+                </section>
 
+                <section>
                     <section>
                         <H3>FizzBuzz</H3>
                         FizzBuzz prints the numbers from 1 to 100.<br>
@@ -178,8 +186,66 @@
                         For multiples of five print “Buzz”.<br>
                         For multiples of both three and five print “FizzBuzz"
                     </section>
+
+                    <section data-markdown>
+                        <textarea data-template>
+                            1. Function `fizzBuzz(number)`
+                               * Use TDD!
+                            2. Web service returning complete FizzBuzz result
+                               * From 1 to 100
+                            3. Call the web service from a web client
+                               * Display readable result
+                        </textarea>
+                    </section>
+
+                    <section>
+                        Jasmine test
+                        <pre>
+                            <code data-trim data-noescape>
+                            describe("answer", function() {
+                                it("to life the universe and everything", function() {
+                                    expect(answer()).toEqual(42);
+                                });
+                            });
+                            </code>
+                        </pre>
+                        <pre>
+                            <code data-trim data-noescape>
+                            function answer() {
+                                return 42;
+                            }
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        AJAX call, using axios
+                        <pre>
+                            <code data-trim data-noescape>
+                                axios.get("/some/url").then(responseHandler);
+
+                                function responseHandler(response) {
+                                    //prosess response data
+                                    outerVariable = response.data;
+                                }
+                            </code>
+                        </pre>
+                    </section>
+
+
                 </section>
-			</div>
+
+
+                <section>
+
+                    <section>
+                        <H3>References</H3>
+                        - Jasmine: https://jasmine.github.io/2.8/introduction.html
+                    </section>
+                </section>
+
+
+            </div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>

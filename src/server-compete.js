@@ -10,7 +10,7 @@ const port = 3000;
 app.use(express.static('client'));
 
 app.get('/api/fizzbuzz', function (req, res) {
-    res.send(fizzBuzzNumbers());
+    res.send(completeFizzBuzz())
 });
 
 
@@ -22,8 +22,8 @@ app.listen(port, (err) => {
     console.log(`server is listening on ${port}`);
 });
 
-function fizzBuzzNumbers() {
-    const result = [];
+function completeFizzBuzz() {
+    let result = [];
     for (let i = 1; i <= 100; i++) {
         result.push(fizzBuzz(i));
     }
