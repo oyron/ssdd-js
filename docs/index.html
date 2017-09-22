@@ -74,6 +74,14 @@
                         <span style="color:black; background:white; font-size: large">(at least according to StackOverflow and GitHub usage)</span>
                     </section>
 
+                    <section>
+                        <H3>Languages built on top of JavaScript</H3>
+
+                    </section>
+
+                    <section data-background-image="img/lang_compiles_to_js.png" data-background-size="contain">
+                    </section>
+
                     <section data-markdown>
                         <textarea data-template>
                             ### Usages
@@ -125,13 +133,7 @@
 
                     </section>
 
-                    <section>
-                        <H3>Languages built on top of JavaScript</H3>
 
-                    </section>
-
-                    <section data-background-image="img/lang_compiles_to_js.png" data-background-size="contain">
-                    </section>
 
                 </section>
 
@@ -155,27 +157,129 @@
                     <section>
                         <H3>Client vs server side</H3>
 
+                        JavaScript language has no concept of input / output. <br>
+                        Designed to run as scripting language in a host environment. <br>
+                        Host environment must provide mechanisms for communicating with the outside world. <br>
+                        Most common environments: browser, NodeJS
+
+                    </section>
+
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Main Data types
+                            - Number
+                            - String
+                            - Boolean
+                            - Object
+                            - Function
+                        </textarea>
+                    </section>
+
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Number
+                            - Double-precision 64-bit format IEEE 754
+                            - No integer type in Javascript
+                            - Standard operators `+ - * / %`
+                            - Built in object <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math">`Math`</a>
+                        </textarea>
+                    </section>
+
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### String
+                            - A sequence of unicode characters (UTF-16)
+                            - An object with methods
+                        </textarea>
                     </section>
 
                     <section>
-                        Code sample
-                        <pre>
-                            <code data-trim data-noescape>
-                            function myFunction(a, b) {
-                                const c = a + b;
-                                return c * 10;
-                             }
-                            </code>
-                        </pre>
-                        <pre>
-                            <code data-trim data-noescape>
-                            function myFunction(a, b) {
-                                const c = a + b;
-                                return c * 10;
-                             }
-                            </code>
-                        </pre>
+                            <H3>Object</H3>
+                            Basically, a collection of name-value pairs<br>
+
+                            <pre><code data-trim data-noescape>
+                            let object = {
+                                foo: 'bar',
+                                age: 42,
+                                baz: {
+                                    myProp: 12
+                                }
+                            }
+                            </code></pre>
+
+                        <pre><code data-trim data-noescape>
+                            let object = new Object();
+                                object.foo = 'bar';
+                                object['age'] = 42;
+                                let bazPropertyName = 'baz';
+                                object[bazPropertyName] = { myProp: 12 };
+                            }
+                            </code></pre>
+
+                        <aside class="notes">
+                            Object literal notation
+                            JavaScript don't have classes.
+                        </aside>
+
                     </section>
+
+                    <section>
+                        <H3>Function (I)</H3>
+                        <pre><code data-trim data-noescape>
+                            function add(x, y) {
+                              var total = x + y;
+                              return total;
+                            }
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <H3>Function (II)</H3>
+                        Functions are first-class objects<br>
+                        Can have properties and methods<br>
+                        As oposed to other objects, functions can be called
+
+                        <aside class="notes">
+                            asøldjfk
+                            Reference: <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">Mozilla</a>
+                        </aside>
+
+                    </section>
+
+
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Other types
+                            - null
+                            - undefined
+                        </textarea>
+                        <aside class="notes">
+                            null - deliberate non-value
+                            undefined - uninitialized value
+                        </aside>
+
+                    </section>
+
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Boolean
+                            Any value can be converted<br>
+                            Values converted to false:
+                            - false
+                            - 0
+                            - empty strings ("")
+                            - NaN
+                            - null
+                            - undefined<br><br>
+                            All other values become true
+                        </textarea>
+                        <aside class="notes">
+                            null - deliberate non-value
+                            undefined - uninitialized value
+                        </aside>
+
+                    </section>
+
                 </section>
 
                 <section>
