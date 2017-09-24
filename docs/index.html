@@ -59,14 +59,26 @@
                         </textarea>
                     </section>
 
-                    <section data-markdown>
-                        ### Brief History
-                        - 1995: Created by Brendan Eich, Netscape
-                        - 1996: Relased with Netscape Navigator 2
-                        - Microsoft then released Jscript with Internet Explorer 3
-                        - 1997: Submitted to ECMA
-                        - 1999: ECMAScript 3
-                        - 2015: ECMAScript 6
+                    <section>
+                        <H3>Brief History</H3>
+                            <ul>
+                                <li>1995: Created by Brendan Eich, Netscape
+                                    <ul>
+                                        <li>Originally named LiveScript</li>
+                                        <li>Renamed for marketing purposes</li>
+                                    </ul>
+                                </li>
+                                <li>1997: Submitted to ECMA</li>
+                                <li>2005: AJAX</li>
+                            </ul>
+
+                        <aside class="notes" data-markdown>
+                            ECMA European Computer Manufacturers Association
+                            2005: Jesse James Garret - whitepaper
+                            AJAX = Asynchronous JavaScript and XML
+                            - background data loading without page reload
+                            - renaissance period for JavaScript
+                        </aside>
                     </section>
 
                     <section data-background-image="img/lang.rank_.617.wm_.png" data-background-size="contain">
@@ -74,23 +86,27 @@
                         <span style="color:black; background:white; font-size: large">(at least according to StackOverflow and GitHub usage)</span>
                     </section>
 
-                    <section>
-                        <H3>Languages built on top of JavaScript</H3>
-
-                    </section>
-
                     <section data-background-image="img/lang_compiles_to_js.png" data-background-size="contain">
+                        <span style="color:black; background:white">Languages built on top of JavaScipt</span><br>
                     </section>
 
-                    <section data-markdown>
-                        <textarea data-template>
-                            ### Usages
-                            - Client side - "the web language"
-                            - Server side
-                            - Mobile apps
-                            - Desktop apps
-                            - Game development
-                        </textarea>
+                    <section>
+                        <H3>Usages</H3>
+                        <ul>
+                            <li>Client side</li>
+                            <li>Server side</li>
+                            <li>Mobile apps</li>
+                            <li>Desktop apps</li>
+                            <li>...</li>
+                        </ul>
+
+
+                        <aside class="notes" data-markdown>
+                            Client side - the web language
+                            Server side - NodeJS
+                            Mobile apps - React Native
+                            Desktop apps - Slack Desktop App for Mac, Atom text editor, etc.
+                        </aside>
                     </section>
 
                     <section data-markdown>
@@ -127,14 +143,6 @@
                         </textarea>
                     </section>
 
-                    <section>
-                        <H3>Game development</H3>
-                        <img data-src="img/game-anim.gif">
-
-                    </section>
-
-
-
                 </section>
 
                 <section>
@@ -154,14 +162,25 @@
                         </textarea>
                     </section>
 
-                    <section>
-                        <H3>Client vs server side</H3>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Host environment
+                            - No concept of input / output in core language
+                            - Designed to run in a host environment
+                            - Host environment must provide API
+                        </textarea>
+                    </section>
 
-                        JavaScript language has no concept of input / output. <br>
-                        Designed to run as scripting language in a host environment. <br>
-                        Host environment must provide mechanisms for communicating with the outside world. <br>
-                        Most common environments: browser, NodeJS
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Variables
+                            - `let` - block level variable
+                            - `const` - block level constant
+                        </textarea>
 
+                        <aside data-markdown>
+                            øalskjf
+                        </aside>
                     </section>
 
                     <section data-markdown>
@@ -243,18 +262,18 @@
                             asøldjfk
                             Reference: <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">Mozilla</a>
                         </aside>
-
                     </section>
 
 
-                    <section data-markdown>
-                        <textarea data-template>
-                            ### Other types
-                            - null
-                            - undefined
-                        </textarea>
+                    <section>
+                        <H3>Other types</H3>
+                        <ul>
+                            <li>null</li>
+                            <li>undefined</li>
+                        </ul>
+
                         <aside class="notes">
-                            null - deliberate non-value
+                            null - deliberate non-value<br>
                             undefined - uninitialized value
                         </aside>
 
@@ -273,12 +292,8 @@
                             - undefined<br><br>
                             All other values become true
                         </textarea>
-                        <aside class="notes">
-                            null - deliberate non-value
-                            undefined - uninitialized value
-                        </aside>
+                     </section>
 
-                    </section>
 
                 </section>
 
