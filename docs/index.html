@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/theme/black.css">
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="shortcut icon" href="img/javascript.ico" type="image/x-icon">
 	</head>
 	<body>
 		<div class="reveal">
@@ -33,10 +34,14 @@
                             - JavaScript developer for ~3 years
                         </textarea>
                     </section>
-                    <section data-markdown>
-                        <textarea data-template>
-                            ## About you
-                        </textarea>
+                    <section>
+                        <H3>About you</H3>
+                        <aside class="notes" data-markdown>
+                            - Developers
+                            - Experience with object oriented languages
+                            - Experience with functional languages
+                            - Experience with JavaScript
+                        </aside>
                     </section>
                 </section>
 
@@ -46,7 +51,7 @@
                         ## Agenda
                         - JavaScript overview
                         - Language details
-                        - Katas
+                        - Hands on
 
                     </textarea>
                 </section>
@@ -55,7 +60,7 @@
                 <section>
                     <section data-markdown>
                         <textarea data-template>
-                            ### History and usage / Overview
+                            ### JavaScript overview
                         </textarea>
                     </section>
 
@@ -73,17 +78,18 @@
                             </ul>
 
                         <aside class="notes" data-markdown>
-                            ECMA European Computer Manufacturers Association
-                            2005: Jesse James Garret - whitepaper
-                            AJAX = Asynchronous JavaScript and XML
-                            - background data loading without page reload
-                            - renaissance period for JavaScript
+                            - Power struggle with Microsoft
+                            - ECMA European Computer Manufacturers Association
+                            - 2005: Jesse James Garret - whitepaper
+                            - AJAX = Asynchronous JavaScript and XML
+                              - background data loading without page reload
+                              - renaissance period for JavaScript
                         </aside>
                     </section>
 
                     <section data-background-image="img/lang.rank_.617.wm_.png" data-background-size="contain">
                         <span style="color:black; background:white">The most commonly used language</span><br>
-                        <span style="color:black; background:white; font-size: large">(at least according to StackOverflow and GitHub usage)</span>
+                        <span style="color:black; background:white; font-size: large">(measured by StackOverflow and GitHub usage)</span>
                     </section>
 
                     <section data-background-image="img/lang_compiles_to_js.png" data-background-size="contain">
@@ -91,32 +97,17 @@
                     </section>
 
                     <section>
-                        <H3>Usages</H3>
-                        <ul>
-                            <li>Client side</li>
-                            <li>Server side</li>
-                            <li>Mobile apps</li>
-                            <li>Desktop apps</li>
-                            <li>...</li>
-                        </ul>
-
-
-                        <aside class="notes" data-markdown>
-                            Client side - the web language
-                            Server side - NodeJS
-                            Mobile apps - React Native
-                            Desktop apps - Slack Desktop App for Mac, Atom text editor, etc.
-                        </aside>
+                        <H3>ECMAScript</H3>
+                        <a href="https://en.wikipedia.org/wiki/ECMAScript#Versions">https://en.wikipedia.org/wiki/ECMAScript#Versions</a>
                     </section>
 
                     <section data-markdown>
                         <textarea data-template>
                             ### Client side JavaScript
-                            - AngularJS
-                            - ReactJS
-                            - Elm
-                            - TypeScript
-                            - ...
+                            - The "web language"
+                            - Main frameworks
+                              - AngularJS
+                              - ReactJS
                         </textarea>
                     </section>
 
@@ -124,22 +115,18 @@
                         <textarea data-template>
                             ### Server side JavaScript
                             - NodeJS
-                            https://medium.com/@pedchenko/top-5-companies-using-nodejs-in-production-9c9e0df4e8ab
+                              - Used by companies like
+                                - Microsoft
+                                - Netflix
+                                - Paypal
                         </textarea>
                     </section>
 
                     <section data-markdown>
                         <textarea data-template>
-                            ### Mobile apps
-                            - React native
-                        </textarea>
-                    </section>
-
-                    <section data-markdown>
-                        <textarea data-template>
-                            ### Desktop apps
-                            - Atom text editor
-                            - Slack Desktop App
+                            ### Other usages
+                            - Mobile devlelopment - React native
+                            - Desktop app development
                         </textarea>
                     </section>
 
@@ -156,17 +143,16 @@
                         <ul>
                             <li>Lightweight</li>
                             <li>Dynamic (interpreted run-time)</li>
-                            <li>Weakly typed, i.e. dynamic type checking</li>
+                            <li>Weakly typed</li>
                             <li>Multi paradigm (functional, object oriented, etc)</li>
                             <li>!= Java</li>
                         </ul>
 
                         <aside class="notes">
                             <ul>
-                                <li>Lightweight: </li>
-                                <li>Dynamic: </li>
-                                <li>Weakly typed: </li>
-                                <li>Multi paradigm: </li>
+                                <li>Dynamic: Dynamic typing. Variables can change type</li>
+                                <li>Weakly typed: Language accept mixing of types</li>
+                                <li>Multi paradigm: functional, object-oriented, event-driven programming styles</li>
                                 <li>!= Java: </li>
                             </ul>
                         </aside>
@@ -178,6 +164,7 @@
                             - No concept of input / output in JavaScript language
                             - Designed to run in a host environment
                             - Host environment must provide API
+                              - Client side JavaScript: DOM
                         </textarea>
                     </section>
 
@@ -233,9 +220,9 @@
                             }
                             </code></pre>
 
-                        <aside class="notes">
-                            Object literal notation
-                            JavaScript don't have classes.
+                        <aside class="notes" data-markdown>
+                            - Object literal notation
+                            - JavaScript don't have classes.
                         </aside>
 
                     </section>
@@ -244,7 +231,7 @@
                         <H3>Function (I)</H3>
                         <pre><code data-trim data-noescape>
                             function add(x, y) {
-                              var total = x + y;
+                              let total = x + y;
                               return total;
                             }
                         </code></pre>
@@ -256,12 +243,20 @@
                         Can have properties and methods<br>
                         As oposed to other objects, functions can be called
 
-                        <aside class="notes">
-                            asøldjfk
-                            Reference: <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">Mozilla</a>
-                        </aside>
                     </section>
 
+                    <section>
+                        <H3>Function (III)</H3>
+                        Callback example
+                        <pre><code data-trim data-noescape>
+                            function doSomething(a, b, func) {
+                                return func(a,b);
+                            }
+
+                            doSomething(10, 2, Math.pow) //100
+                            doSomething(10, 2, add)      //12
+                        </code></pre>
+                    </section>
 
                     <section>
                         <H3>Other types</H3>
@@ -316,13 +311,14 @@
                         </ul>
                     </section>
 
-                    <section>
-                        <H3>Strict mode</H3>
-                        <ul>
-                            <li>`"use strict"</li>
-                        </ul>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Strict mode
+                            - `"use strict"`
+                            - Variables must be declared
+                            - Silent errors are thrown as exceptions
+                        </textarea>
                     </section>
-
 
                 </section>
 

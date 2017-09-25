@@ -12,7 +12,6 @@ app.get('/api/fizzbuzz', function (req, res) {
     res.send({answer: answer()});
 });
 
-
 app.listen(port, (err) => {
     if (err) {
         return console.error('An error occurred', err);
