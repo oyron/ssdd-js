@@ -5,11 +5,6 @@ Presentation: https://oyron.github.io/ssdd-js
 ### Prerequisites
 You need NodeJS installed on your computer. NodeJS can be installed from: https://nodejs.org/en/download
 
-Please note that you need to configure proxy settings, if you are running NodeJS in the Statoil network: 
-```
-npm config set proxy "http://www-proxy.statoil.no:80"
-npm config set https-proxy "http://www-proxy.statoil.no:80" 
-```
 
 ### Installation instructions
 1. Clone Git repo or Download Zip file
@@ -51,3 +46,11 @@ Start by reviewing the skeleton client in `client/index.html` and `client/js/fun
 Complete the `getFizzBuzz()` method and display the result the web page.  
 Then format the result. Try to colorize the output, e.g. by using 
 `<span style="color: ...">...</span>`
+
+
+### Misc
+Note that if you are running within the Statoil network you need to configure proxy settings: 
+```
+npm config set proxy "http://www-proxy.statoil.no:80"
+npm config set https-proxy "http://www-proxy.statoil.no:80" 
+```
