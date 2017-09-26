@@ -49,6 +49,8 @@ Then format the result. Try to colorize the output, e.g. by using
 
 
 ### Misc
+Trick to avoid SSL issues: `npm set strict-ssl=false`
+
 Note that if you are running within the Statoil network you need to configure proxy settings: 
 ```
 npm config set proxy "http://www-proxy.statoil.no:80"
